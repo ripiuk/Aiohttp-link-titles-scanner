@@ -1,0 +1,682 @@
+======== Running on http://127.0.0.1:7128 ========
+(Press CTRL+C to quit)
+/home/sany/job/digger/venv/lib/python3.6/site-packages/aiomysql/cursors.py:239: Warning: Table 'tbl_results_united_vacations' already exists
+  yield from self._query(query)
+WARNIN | dig.loader      | 25.07 16:43:16.679 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.F190 | 25.07 16:43:16.681 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'AMS', 'proxy': 'US', 'uvac_destination': 'AMS', 'number_of_nights': 3, 'offset': 64, 'row_num': 19})
+WARNIN | dig.loader      | 25.07 17:00:41.708 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 17:00:41.709 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'AMS', 'proxy': 'US', 'uvac_destination': 'AMS', 'number_of_nights': 3, 'offset': 139, 'row_num': 44})
+ERROR  | dig.loader      | 25.07 17:01:18.757 | Loader exception: Message: {"errorMessage":"undefined is not an object (evaluating 'ratesLoader.toggleRates')","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"119","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:47878","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"script\": \"$(\\\".select-hotel-wrap>button\\\").click()\", \"args\": [], \"sessionId\": \"1f7b9d50-7140-11e7-9fbe-87575f2ed181\"}","url":"/execute","urlParsed":{"anchor":"","query":"","file":"execute","directory":"/","path":"/execute","relative":"/execute","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/execute","queryKey":{},"chunks":["execute"]},"urlOriginal":"/session/1f7b9d50-7140-11e7-9fbe-87575f2ed181/execute"}}
+Screenshot: available via screen
+Traceback (most recent call last):
+  File "/home/sany/job/digger/digger/loader.py", line 118, in _driver_executor
+    scan_resp = await call_in_executor(handler, navigator, *args, **kwargs)
+  File "/usr/lib/python3.6/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/sany/job/digger/digger/diggers/united_vacations.py", line 93, in _scraping
+    nav.run_script('$(".select-hotel-wrap>button").click()')
+  File "/home/sany/job/digger/digger/loader.py", line 396, in run_script
+    return self.driver.execute_script(script, *args)
+  File "/home/sany/job/digger/venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 491, in execute_script
+    'args': converted_args})['value']
+  File "/home/sany/job/digger/venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 256, in execute
+    self.error_handler.check_response(response)
+  File "/home/sany/job/digger/venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: {"errorMessage":"undefined is not an object (evaluating 'ratesLoader.toggleRates')","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"119","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:47878","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"script\": \"$(\\\".select-hotel-wrap>button\\\").click()\", \"args\": [], \"sessionId\": \"1f7b9d50-7140-11e7-9fbe-87575f2ed181\"}","url":"/execute","urlParsed":{"anchor":"","query":"","file":"execute","directory":"/","path":"/execute","relative":"/execute","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/execute","queryKey":{},"chunks":["execute"]},"urlOriginal":"/session/1f7b9d50-7140-11e7-9fbe-87575f2ed181/execute"}}
+Screenshot: available via screen
+
+WARNIN | dig.un_vac.1F92 | 25.07 17:01:22.045 | Dig item Loader Error: Message: Message: {"errorMessage":"undefined is not an object (evaluating 'ratesLoader.toggleRates')","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"119","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:47878","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"script\": \"$(\\\".select-hotel-wrap>button\\\").click()\", \"args\": [], \"sessionId\": \"1f7b9d50-7140-11e7-9fbe-87575f2ed181\"}","url":"/execute","urlParsed":{"anchor":"","query":"","file":"execute","directory":"/","path":"/execute","relative":"/execute","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/execute","queryKey":{},"chunks":["execute"]},"urlOriginal":"/session/1f7b9d50-7140-11e7-9fbe-87575f2ed181/execute"}}
+Screenshot: available via screen
+.
+CSS element: #tileContainer>li.
+Screenshot is available. (item={'fc_destination_code': 'AMS', 'proxy': 'US', 'uvac_destination': 'AMS', 'number_of_nights': 3, 'offset': 121, 'row_num': 38})
+WARNIN | dig.loader      | 25.07 17:01:58.307 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 17:01:58.307 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'AMS', 'proxy': 'US', 'uvac_destination': 'AMS', 'number_of_nights': 3, 'offset': 142, 'row_num': 45})
+WARNIN | dig.loader      | 25.07 17:05:17.340 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 17:05:17.340 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'AMS', 'proxy': 'US', 'uvac_destination': 'AMS', 'number_of_nights': 3, 'offset': 151, 'row_num': 48})
+WARNIN | dig.loader      | 25.07 17:05:38.857 | Loader driver error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 17:05:38.857 | Dig item Loader Error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available. (item={'fc_destination_code': 'AMS', 'proxy': 'US', 'uvac_destination': 'AMS', 'number_of_nights': 3, 'offset': 148, 'row_num': 47})
+WARNIN | dig.loader      | 25.07 17:08:19.532 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 17:08:19.532 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'AMS', 'proxy': 'US', 'uvac_destination': 'AMS', 'number_of_nights': 3, 'offset': 127, 'row_num': 40})
+WARNIN | dig.loader      | 25.07 17:22:15.259 | Loader driver error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 17:22:15.260 | Dig item Loader Error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available. (item={'fc_destination_code': 'AMS', 'proxy': 'US', 'uvac_destination': 'AMS', 'number_of_nights': 3, 'offset': 248, 'row_num': 59})
+ERROR  | dig.loader      | 25.07 17:22:26.675 | Loader exception: Message: {"errorMessage":"undefined is not an object (evaluating 'ratesLoader.toggleRates')","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"119","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:51487","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"script\": \"$(\\\".select-hotel-wrap>button\\\").click()\", \"args\": [], \"sessionId\": \"a55300b0-7142-11e7-8999-69a66960bc74\"}","url":"/execute","urlParsed":{"anchor":"","query":"","file":"execute","directory":"/","path":"/execute","relative":"/execute","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/execute","queryKey":{},"chunks":["execute"]},"urlOriginal":"/session/a55300b0-7142-11e7-8999-69a66960bc74/execute"}}
+Screenshot: available via screen
+Traceback (most recent call last):
+  File "/home/sany/job/digger/digger/loader.py", line 118, in _driver_executor
+    scan_resp = await call_in_executor(handler, navigator, *args, **kwargs)
+  File "/usr/lib/python3.6/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/sany/job/digger/digger/diggers/united_vacations.py", line 93, in _scraping
+    nav.run_script('$(".select-hotel-wrap>button").click()')
+  File "/home/sany/job/digger/digger/loader.py", line 396, in run_script
+    return self.driver.execute_script(script, *args)
+  File "/home/sany/job/digger/venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 491, in execute_script
+    'args': converted_args})['value']
+  File "/home/sany/job/digger/venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 256, in execute
+    self.error_handler.check_response(response)
+  File "/home/sany/job/digger/venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: {"errorMessage":"undefined is not an object (evaluating 'ratesLoader.toggleRates')","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"119","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:51487","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"script\": \"$(\\\".select-hotel-wrap>button\\\").click()\", \"args\": [], \"sessionId\": \"a55300b0-7142-11e7-8999-69a66960bc74\"}","url":"/execute","urlParsed":{"anchor":"","query":"","file":"execute","directory":"/","path":"/execute","relative":"/execute","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/execute","queryKey":{},"chunks":["execute"]},"urlOriginal":"/session/a55300b0-7142-11e7-8999-69a66960bc74/execute"}}
+Screenshot: available via screen
+
+WARNIN | dig.un_vac.5B54 | 25.07 17:22:29.598 | Dig item Loader Error: Message: Message: {"errorMessage":"undefined is not an object (evaluating 'ratesLoader.toggleRates')","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"119","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:51487","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"script\": \"$(\\\".select-hotel-wrap>button\\\").click()\", \"args\": [], \"sessionId\": \"a55300b0-7142-11e7-8999-69a66960bc74\"}","url":"/execute","urlParsed":{"anchor":"","query":"","file":"execute","directory":"/","path":"/execute","relative":"/execute","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/execute","queryKey":{},"chunks":["execute"]},"urlOriginal":"/session/a55300b0-7142-11e7-8999-69a66960bc74/execute"}}
+Screenshot: available via screen
+.
+CSS element: #tileContainer>li.
+Screenshot is available. (item={'fc_destination_code': 'AMS', 'proxy': 'US', 'uvac_destination': 'AMS', 'number_of_nights': 3, 'offset': 163, 'row_num': 52})
+rooms_list [<digger.loader.Element object at 0x7f48bc7c8358>]
+rooms [{'room_type': 'Garden Bungalow', 'added_values': 'Honeymoon/Anniversary Welcome Gift!', 'total_price': '$924.56'}]
+WARNIN | dig.loader      | 25.07 17:36:13.911 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 17:36:13.911 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'ANU', 'proxy': 'US', 'uvac_destination': 'ANU', 'number_of_nights': 6, 'offset': 31, 'row_num': 69})
+rooms_list [<digger.loader.Element object at 0x7f48bc7d6240>]
+rooms [{'room_type': 'Garden Bungalow', 'added_values': 'Honeymoon/Anniversary Welcome Gift!', 'total_price': '$1,874.30'}]
+rooms_list [<digger.loader.Element object at 0x7f48d4033ef0>]
+rooms [{'room_type': 'Garden Bungalow', 'added_values': 'Honeymoon/Anniversary Welcome Gift!', 'total_price': '$1,251.51'}]
+WARNIN | dig.loader      | 25.07 17:47:59.088 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 17:47:59.088 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'ANU', 'proxy': 'US', 'uvac_destination': 'ANU', 'number_of_nights': 6, 'offset': 223, 'row_num': 101})
+WARNIN | dig.loader      | 25.07 19:36:39.696 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 19:36:39.696 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 37, 'row_num': 391})
+WARNIN | dig.loader      | 25.07 20:05:31.062 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:05:31.062 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 61, 'row_num': 395})
+WARNIN | dig.loader      | 25.07 20:08:06.959 | Loader driver error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:08:06.959 | Dig item Loader Error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 67, 'row_num': 396})
+WARNIN | dig.loader      | 25.07 20:08:57.896 | Loader driver error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:08:57.897 | Dig item Loader Error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 31, 'row_num': 390})
+WARNIN | dig.un_vac.5B54 | 25.07 20:08:06.959 | Dig item Loader Error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 67, 'row_num': 396})
+WARNIN | dig.loader      | 25.07 20:08:57.896 | Loader driver error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:08:57.897 | Dig item Loader Error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 31, 'row_num': 390})
+WARNIN | dig.loader      | 25.07 20:15:36.052 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:15:36.052 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 133, 'row_num': 407})
+WARNIN | dig.loader      | 25.07 20:15:52.206 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:15:52.207 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 139, 'row_num': 408})
+WARNIN | dig.loader      | 25.07 20:16:56.118 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:16:56.118 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 145, 'row_num': 409})
+WARNIN | dig.loader      | 25.07 20:17:09.964 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:17:09.964 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 151, 'row_num': 410})
+WARNIN | dig.loader      | 25.07 20:17:13.475 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:17:13.476 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 157, 'row_num': 411})
+WARNIN | dig.loader      | 25.07 20:18:21.836 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:18:21.837 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 163, 'row_num': 412})
+WARNIN | dig.loader      | 25.07 20:18:27.473 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:18:27.474 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 169, 'row_num': 413})
+WARNIN | dig.loader      | 25.07 20:18:43.113 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:18:43.113 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 175, 'row_num': 414})
+WARNIN | dig.loader      | 25.07 20:19:46.577 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:19:46.578 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 181, 'row_num': 415})
+WARNIN | dig.loader      | 25.07 20:20:02.190 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:20:02.191 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 193, 'row_num': 417})
+WARNIN | dig.loader      | 25.07 20:21:20.584 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:21:20.584 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 199, 'row_num': 418})
+WARNIN | dig.loader      | 25.07 20:21:33.194 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:21:33.194 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 205, 'row_num': 419})
+WARNIN | dig.loader      | 25.07 20:22:13.204 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:22:13.205 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 211, 'row_num': 420})
+WARNIN | dig.loader      | 25.07 20:22:49.878 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:22:49.878 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 217, 'row_num': 421})
+WARNIN | dig.loader      | 25.07 20:22:59.610 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:22:59.610 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 223, 'row_num': 422})
+WARNIN | dig.loader      | 25.07 20:23:40.851 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:23:40.852 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 229, 'row_num': 423})
+WARNIN | dig.loader      | 25.07 20:24:10.912 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:24:10.913 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 235, 'row_num': 424})
+WARNIN | dig.loader      | 25.07 20:24:27.483 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:24:27.483 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 241, 'row_num': 425})
+WARNIN | dig.loader      | 25.07 20:25:12.766 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:25:12.766 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 247, 'row_num': 426})
+WARNIN | dig.loader      | 25.07 20:26:41.643 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:26:41.644 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 265, 'row_num': 429})
+WARNIN | dig.loader      | 25.07 20:26:52.438 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:26:52.440 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 271, 'row_num': 430})
+WARNIN | dig.loader      | 25.07 20:27:46.353 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:27:46.354 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 277, 'row_num': 431})
+WARNIN | dig.loader      | 25.07 20:27:59.919 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:27:59.920 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 283, 'row_num': 432})
+WARNIN | dig.loader      | 25.07 20:28:17.897 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:28:17.898 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 289, 'row_num': 433})
+WARNIN | dig.loader      | 25.07 20:29:14.730 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:29:14.730 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 301, 'row_num': 435})
+WARNIN | dig.loader      | 25.07 20:29:15.153 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:29:15.153 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 295, 'row_num': 434})
+WARNIN | dig.loader      | 25.07 20:29:37.552 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:29:37.552 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 307, 'row_num': 436})
+WARNIN | dig.loader      | 25.07 20:30:42.683 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:30:42.683 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 313, 'row_num': 437})
+WARNIN | dig.loader      | 25.07 20:30:44.152 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:30:44.152 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 319, 'row_num': 438})
+WARNIN | dig.loader      | 25.07 20:31:09.469 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:31:09.470 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 325, 'row_num': 439})
+WARNIN | dig.loader      | 25.07 20:31:58.125 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:31:58.126 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 331, 'row_num': 440})
+WARNIN | dig.loader      | 25.07 20:32:07.356 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:32:07.357 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 337, 'row_num': 441})
+WARNIN | dig.loader      | 25.07 20:32:36.660 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:32:36.660 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 343, 'row_num': 442})
+WARNIN | dig.loader      | 25.07 20:33:30.514 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:33:30.514 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 349, 'row_num': 443})
+WARNIN | dig.loader      | 25.07 20:33:33.033 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:33:33.034 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 355, 'row_num': 444})
+WARNIN | dig.loader      | 25.07 20:34:13.986 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:34:13.987 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 361, 'row_num': 445})
+WARNIN | dig.loader      | 25.07 20:34:53.633 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:34:53.633 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 373, 'row_num': 447})
+WARNIN | dig.loader      | 25.07 20:34:56.376 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:34:56.376 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'RMY', 'proxy': 'US', 'uvac_destination': 'CU3', 'number_of_nights': 6, 'offset': 367, 'row_num': 446})
+WARNIN | dig.loader      | 25.07 20:36:29.838 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:36:29.839 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 13, 'row_num': 449})
+WARNIN | dig.loader      | 25.07 20:36:35.379 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.32D3 | 25.07 20:36:35.379 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 19, 'row_num': 450})
+WARNIN | dig.loader      | 25.07 20:37:46.252 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:37:46.252 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 25, 'row_num': 451})
+WARNIN | dig.loader      | 25.07 20:39:22.179 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:39:22.180 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 37, 'row_num': 453})
+WARNIN | dig.loader      | 25.07 20:40:58.185 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:40:58.186 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 43, 'row_num': 454})
+WARNIN | dig.loader      | 25.07 20:41:26.305 | Loader driver error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:41:26.305 | Dig item Loader Error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 7, 'row_num': 448})
+WARNIN | dig.loader      | 25.07 20:42:28.383 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:42:28.383 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 49, 'row_num': 455})
+WARNIN | dig.loader      | 25.07 20:43:17.544 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:43:17.544 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 55, 'row_num': 456})
+WARNIN | dig.loader      | 25.07 20:44:04.406 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:44:04.407 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 61, 'row_num': 457})
+WARNIN | dig.loader      | 25.07 20:45:45.364 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:45:45.364 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 79, 'row_num': 460})
+WARNIN | dig.loader      | 25.07 20:45:47.048 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:45:47.049 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 73, 'row_num': 459})
+WARNIN | dig.loader      | 25.07 20:47:32.226 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:47:32.227 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 85, 'row_num': 461})
+WARNIN | dig.loader      | 25.07 20:48:59.414 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:48:59.414 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 97, 'row_num': 463})
+WARNIN | dig.loader      | 25.07 20:50:41.096 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:50:41.097 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 103, 'row_num': 464})
+WARNIN | dig.loader      | 25.07 20:52:12.619 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:52:12.620 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 109, 'row_num': 465})
+WARNIN | dig.loader      | 25.07 20:53:43.394 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:53:43.395 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 115, 'row_num': 466})
+WARNIN | dig.loader      | 25.07 20:55:10.790 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 20:55:10.790 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 121, 'row_num': 467})
+WARNIN | dig.loader      | 25.07 20:56:37.308 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 20:56:37.308 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 91, 'row_num': 462})
+WARNIN | dig.loader      | 25.07 21:05:29.815 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:05:29.815 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 127, 'row_num': 468})
+WARNIN | dig.loader      | 25.07 21:09:56.259 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 21:09:56.259 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 133, 'row_num': 469})
+WARNIN | dig.loader      | 25.07 21:11:38.471 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 21:11:38.472 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 145, 'row_num': 471})
+WARNIN | dig.loader      | 25.07 21:13:10.887 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 21:13:10.888 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 151, 'row_num': 472})
+ERROR  | dig.loader      | 25.07 21:22:09.905 | Loader exception: Message: {"errorMessage":"undefined is not an object (evaluating 'ratesLoader.toggleRates')","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"119","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:56250","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"script\": \"$(\\\".select-hotel-wrap>button\\\").click()\", \"args\": [], \"sessionId\": \"d8b48660-7163-11e7-8001-a37afa05ef31\"}","url":"/execute","urlParsed":{"anchor":"","query":"","file":"execute","directory":"/","path":"/execute","relative":"/execute","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/execute","queryKey":{},"chunks":["execute"]},"urlOriginal":"/session/d8b48660-7163-11e7-8001-a37afa05ef31/execute"}}
+Screenshot: available via screen
+Traceback (most recent call last):
+  File "/home/sany/job/digger/digger/loader.py", line 118, in _driver_executor
+    scan_resp = await call_in_executor(handler, navigator, *args, **kwargs)
+  File "/usr/lib/python3.6/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/sany/job/digger/digger/diggers/united_vacations.py", line 93, in _scraping
+    nav.run_script('$(".select-hotel-wrap>button").click()')
+  File "/home/sany/job/digger/digger/loader.py", line 396, in run_script
+    return self.driver.execute_script(script, *args)
+  File "/home/sany/job/digger/venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 491, in execute_script
+    'args': converted_args})['value']
+  File "/home/sany/job/digger/venv/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 256, in execute
+    self.error_handler.check_response(response)
+  File "/home/sany/job/digger/venv/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: {"errorMessage":"undefined is not an object (evaluating 'ratesLoader.toggleRates')","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"119","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:56250","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"script\": \"$(\\\".select-hotel-wrap>button\\\").click()\", \"args\": [], \"sessionId\": \"d8b48660-7163-11e7-8001-a37afa05ef31\"}","url":"/execute","urlParsed":{"anchor":"","query":"","file":"execute","directory":"/","path":"/execute","relative":"/execute","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/execute","queryKey":{},"chunks":["execute"]},"urlOriginal":"/session/d8b48660-7163-11e7-8001-a37afa05ef31/execute"}}
+Screenshot: available via screen
+
+WARNIN | dig.un_vac.5B54 | 25.07 21:22:22.820 | Dig item Loader Error: Message: Message: {"errorMessage":"undefined is not an object (evaluating 'ratesLoader.toggleRates')","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"119","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:56250","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"script\": \"$(\\\".select-hotel-wrap>button\\\").click()\", \"args\": [], \"sessionId\": \"d8b48660-7163-11e7-8001-a37afa05ef31\"}","url":"/execute","urlParsed":{"anchor":"","query":"","file":"execute","directory":"/","path":"/execute","relative":"/execute","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/execute","queryKey":{},"chunks":["execute"]},"urlOriginal":"/session/d8b48660-7163-11e7-8001-a37afa05ef31/execute"}}
+Screenshot: available via screen
+.
+CSS element: #tileContainer>li.
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 139, 'row_num': 470})
+WARNIN | dig.loader      | 25.07 21:24:10.310 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 21:24:10.310 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 157, 'row_num': 473})
+WARNIN | dig.loader      | 25.07 21:26:10.486 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:26:10.486 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 163, 'row_num': 474})
+WARNIN | dig.loader      | 25.07 21:27:53.743 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:27:53.744 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 175, 'row_num': 476})
+WARNIN | dig.loader      | 25.07 21:29:24.869 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:29:24.869 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 181, 'row_num': 477})
+WARNIN | dig.loader      | 25.07 21:30:57.736 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:30:57.736 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 187, 'row_num': 478})
+WARNIN | dig.loader      | 25.07 21:32:36.416 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:32:36.416 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 193, 'row_num': 479})
+WARNIN | dig.loader      | 25.07 21:34:19.916 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:34:19.916 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 199, 'row_num': 480})
+WARNIN | dig.loader      | 25.07 21:35:50.175 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:35:50.175 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 205, 'row_num': 481})
+WARNIN | dig.loader      | 25.07 21:37:41.001 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:37:41.001 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 211, 'row_num': 482})
+WARNIN | dig.loader      | 25.07 21:40:06.949 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.1F92 | 25.07 21:40:06.949 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 169, 'row_num': 475})
+WARNIN | dig.loader      | 25.07 21:47:01.541 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:47:01.542 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 217, 'row_num': 483})
+WARNIN | dig.loader      | 25.07 21:48:31.075 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:48:31.075 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 229, 'row_num': 485})
+WARNIN | dig.loader      | 25.07 21:50:14.689 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:50:14.689 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 235, 'row_num': 486})
+WARNIN | dig.loader      | 25.07 21:51:54.437 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:51:54.438 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 241, 'row_num': 487})
+WARNIN | dig.loader      | 25.07 21:53:17.478 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:53:17.479 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 247, 'row_num': 488})
+WARNIN | dig.loader      | 25.07 21:54:54.669 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:54:54.669 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 253, 'row_num': 489})
+WARNIN | dig.loader      | 25.07 21:56:23.680 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 21:56:23.680 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 259, 'row_num': 490})
+WARNIN | dig.loader      | 25.07 22:00:10.949 | Loader driver error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 22:00:10.950 | Dig item Loader Error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 265, 'row_num': 491})
+WARNIN | dig.loader      | 25.07 22:01:48.990 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 22:01:48.990 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 271, 'row_num': 492})
+WARNIN | dig.loader      | 25.07 22:03:20.158 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 22:03:20.158 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 277, 'row_num': 493})
+WARNIN | dig.loader      | 25.07 22:05:08.800 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 22:05:08.800 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 283, 'row_num': 494})
+WARNIN | dig.loader      | 25.07 22:06:46.595 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 22:06:46.595 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 289, 'row_num': 495})
+WARNIN | dig.loader      | 25.07 22:08:25.132 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 22:08:25.132 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 295, 'row_num': 496})
+WARNIN | dig.loader      | 25.07 22:12:30.944 | Loader driver error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 22:12:30.944 | Dig item Loader Error: Message: Waiting for rooms loaded timeout.
+CSS element: .select-hotel-wrap>button[aria-expanded=true].
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 301, 'row_num': 497})
+WARNIN | dig.loader      | 25.07 23:50:41.443 | Loader driver error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available.
+WARNIN | dig.un_vac.5B54 | 25.07 23:50:41.443 | Dig item Loader Error: Message: Error wait css: ['.page-error-wrap', '.summary-cart-title', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination', '#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi'] (30.000/30.000 sec).
+CSS element: .page-error-wrap|.summary-cart-title|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_SearchComponents_scc_rt_CustomValidatordestination|#ctl00_ctl01_ContentPlaceHolder_ContentPlaceHolder_AC_ap_l_psi.
+Screenshot is available. (item={'fc_destination_code': 'CUN', 'proxy': 'US', 'uvac_destination': 'CUN', 'number_of_nights': 6, 'offset': 307, 'row_num': 498})
